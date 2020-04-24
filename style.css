@@ -21,10 +21,10 @@ section + section {
   margin-top: 2rem;
 }
 
-* + slide-content > * {
+collabsible-content > * {
   margin-top: 1rem;
 }
 
-slide-content + * {
+collabsible-content + * {
   margin-top: 1rem;
 }

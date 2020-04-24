@@ -1,4 +1,4 @@
-class SlideContent extends HTMLElement {
+class CollabsibleContent extends HTMLElement {
   constructor() {
     super();
 
@@ -58,4 +58,4 @@ class SlideContent extends HTMLElement {
   }
 }
 
-customElements.define("slide-content", SlideContent);
+customElements.define("collabsible-content", CollabsibleContent);
