@@ -1,4 +1,4 @@
-class CollabsibleContent extends HTMLElement {
+class CollapsibleContent extends HTMLElement {
   constructor() {
     super();
 
@@ -36,7 +36,7 @@ class CollabsibleContent extends HTMLElement {
 
   sendEvent() {
     this.dispatchEvent(
-      new CustomEvent("collabsible-content-open", {
+      new CustomEvent("collapsible-content-open", {
         detail: this.open,
         bubbles: true,
       })
@@ -58,4 +58,4 @@ class CollabsibleContent extends HTMLElement {
   }
 }
 
-customElements.define("collabsible-content", CollabsibleContent);
+customElements.define("collapsible-content", CollapsibleContent);

@@ -1,21 +1,21 @@
-# Collabsible Content
+# Collapsible Content
 
 ## Usage
 
 ```html
-<collabsible-content open>
+<collapsible-content open>
 
   <div>
     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer rutrum, orci vestibulum ullamcorper
     ultricies.
   </div>
 
-</collabsible-content>
+</collapsible-content>
 ```
 
 ## Demo
 
-- https://collabsible-content.now.sh/
+- https://collapsible-content.now.sh/
 
 ## Attributes
 
@@ -30,5 +30,5 @@
 
 ## Events
 
-### `collabsible-content-open`
+### `collapsible-content-open`
 - you can read state from `event.details`

@@ -24,15 +24,15 @@ section + section {
   margin-top: 2rem;
 }
 
-collabsible-content > * {
+collapsible-content > * {
   margin-top: 1rem;
 }
 
-collabsible-content + * {
+collapsible-content + * {
   margin-top: 1rem;
 }
 
-collabsible-content[open] + *::after {
+collapsible-content[open] + *::after {
   content: "You can react to open state with CSS selector";
   opacity: .4;
 }
