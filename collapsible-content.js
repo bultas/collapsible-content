@@ -33,7 +33,6 @@ class CollapsibleContent extends HTMLElement {
   }
 
   onChange() {
-    this.setAria();
     this.setStyles();
     this.sendEvent();
   }
@@ -59,10 +58,6 @@ class CollapsibleContent extends HTMLElement {
       this.style.height = 0;
       this.style.opacity = 0;
     }
-  }
-
-  setAria() {
-    this.setAttribute("aria-expanded", this.open);
   }
 }
 
