@@ -15,21 +15,25 @@ class CollapsibleContent extends HTMLElement {
     return this.hasAttribute("open");
   }
 
-  set open(val) {
-    if (val === true) {
-      this.setAttribute("open", val);
+  set open(bool) {
+    if (bool === true) {
+      this.setAttribute("open", true);
     } else {
       this.removeAttribute("open");
     }
   }
 
-  attributeChangedCallback(name, prevValue, value) {
-    this.setStyles();
-    this.sendEvent();
+  attributeChangedCallback() {
+    this.onChange();
   }
 
   connectedCallback() {
     this.height = this.firstElementChild.scrollHeight;
+    this.onChange();
+  }
+
+  onChange() {
+    this.setAria();
     this.setStyles();
     this.sendEvent();
   }
@@ -55,6 +59,10 @@ class CollapsibleContent extends HTMLElement {
       this.style.height = 0;
       this.style.opacity = 0;
     }
+  }
+
+  setAria() {
+    this.setAttribute("aria-expanded", this.open);
   }
 }
 
