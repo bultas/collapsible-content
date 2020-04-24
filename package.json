@@ -1,0 +1,19 @@
+{
+  "name": "collapsible-content",
+  "version": "1.2.1",
+  "description": "custom element for collapsible content",
+  "main": "collapsible-content.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bultas/collapsible-content.git"
+  },
+  "author": "Daniel Bultas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bultas/collapsible-content/issues"
+  },
+  "homepage": "https://github.com/bultas/collapsible-content#readme"
+}
