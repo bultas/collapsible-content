@@ -1,0 +1,30 @@
+html {
+  height: 100%;
+}
+
+main {
+  max-width: 800px;
+  margin: 3rem auto;
+}
+
+.placeholder {
+  background: #eee;
+  height: 8rem;
+}
+
+button {
+  cursor: pointer;
+  padding: .5rem 1rem;
+}
+
+section + section {
+  margin-top: 2rem;
+}
+
+* + slide-content > * {
+  margin-top: 1rem;
+}
+
+slide-content + * {
+  margin-top: 1rem;
+}
