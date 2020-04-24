@@ -31,4 +31,4 @@
 ## Events
 
 ### `collapsible-content-open`
-- you can read state from `event.details`
+- you can read state from `event.detail`
