@@ -8,6 +8,9 @@ main {
 }
 
 .placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #eee;
   height: 8rem;
 }
@@ -27,4 +30,9 @@ collabsible-content > * {
 
 collabsible-content + * {
   margin-top: 1rem;
+}
+
+collabsible-content[open] + *::after {
+  content: "You can react to open state with CSS selector";
+  opacity: .4;
 }
