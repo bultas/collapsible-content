@@ -2,7 +2,7 @@
 
 ## Usage
 
-```
+```html
 <collabsible-content open>
 
   <div>
@@ -12,6 +12,10 @@
 
 </collabsible-content>
 ```
+
+## Demo
+
+- https://collabsible-content.now.sh/
 
 ## Attributes
 
