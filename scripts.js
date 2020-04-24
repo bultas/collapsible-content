@@ -1,6 +1,6 @@
-window.addEventListener("collabsible-content-open", ({ target, details }) => {
+window.addEventListener("collabsible-content-open", ({ target, detail }) => {
   const button = document.querySelector(`[data-collabsible=${target.id}]`);
-  button.textContent = details ? "close" : "open";
+  button.textContent = detail ? "close" : "open";
 });
 
 window.addEventListener("click", ({ target: { dataset } }) => {
