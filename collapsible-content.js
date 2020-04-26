@@ -28,7 +28,7 @@ class CollapsibleContent extends HTMLElement {
   }
 
   connectedCallback() {
-    this.height = this.firstElementChild.scrollHeight;
+    this.height = this.scrollHeight;
     this.onChange();
   }
 
