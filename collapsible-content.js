@@ -5,6 +5,10 @@ class CollapsibleContent extends HTMLElement {
     this.style.display = "block";
     this.style.overflow = "hidden";
     this.style.transitionTimingFunction = "cubic-bezier(0, 1, 0.5, 1)";
+
+    if (this.hasAttribute("observe")) {
+      this.observe();
+    }
   }
 
   static get observedAttributes() {
@@ -28,13 +32,26 @@ class CollapsibleContent extends HTMLElement {
   }
 
   connectedCallback() {
-    this.height = this.scrollHeight;
     this.onChange();
+  }
+
+  disconnectedCallback() {
+    if (this.observer) {
+      this.observer.disconnect();
+    }
   }
 
   onChange() {
     this.setStyles();
     this.sendEvent();
+  }
+
+  observe() {
+    this.observer = new MutationObserver((e) => {
+      this.onChange();
+    });
+
+    this.observer.observe(this, { childList: true, subtree: true });
   }
 
   sendEvent() {
@@ -47,6 +64,8 @@ class CollapsibleContent extends HTMLElement {
   }
 
   setStyles() {
+    this.height = this.scrollHeight + 1; // scrollHeight + fix height decimals
+
     if (this.open === true) {
       this.style.transition = "height .4s, opacity .4s .2s";
       this.style.height = `${this.height}px`;
