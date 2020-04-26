@@ -24,7 +24,7 @@ section + section {
   margin-top: 2rem;
 }
 
-collapsible-content > * {
+collapsible-content > *:first-child {
   margin-top: 1rem;
 }
 

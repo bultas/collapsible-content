@@ -15,6 +15,7 @@
   <main>
 
     <section>
+      <h2>Basic content</h2>
       <button data-collapsible="collapsible-1"></button>
 
       <collapsible-content id="collapsible-1" open>
@@ -41,29 +42,11 @@
     </section>
 
     <section>
+      <h2>Dynamic content</h2>
       <button data-collapsible="collapsible-2"></button>
-
-      <collapsible-content id="collapsible-2">
-
-        <div>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer rutrum, orci vestibulum ullamcorper
-          ultricies,
-          lacus quam ultricies odio, vitae placerat pede sem sit amet enim. Neque porro quisquam est, qui dolorem ipsum
-          quia
-          dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
-          dolore
-          magnam aliquam quaerat voluptatem. Nunc auctor. Fusce nibh. Pellentesque arcu. Mauris tincidunt sem sed arcu.
-          Integer pellentesque quam vel velit. Fusce suscipit libero eget elit. Duis risus.
-
-          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Nunc dapibus
-          tortor
-          vel mi dapibus sollicitudin. Phasellus et lorem id felis nonummy placerat. Curabitur bibendum justo non orci.
-          hendrerit ante.
-        </div>
-
+      <collapsible-content id="collapsible-2" observe>
+        <button id="add-dynamic-content">Add dynamic content</button>
       </collapsible-content>
-
-      <div class="placeholder"></div>
     </section>
 
   </main>
