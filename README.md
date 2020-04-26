@@ -4,12 +4,8 @@
 
 ```html
 <collapsible-content open>
-
-  <div>
     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer rutrum, orci vestibulum ullamcorper
     ultricies.
-  </div>
-
 </collapsible-content>
 ```
 
@@ -20,6 +16,10 @@
 ## Attributes
 
 ### `open`
+- setup `open` as default state of collapsible-content
+
+### `observe`
+- if you need to handle dynamic content, add `observe` attribute. 
 
 ## Properties
 
