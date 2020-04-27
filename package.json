@@ -1,8 +1,9 @@
 {
-  "name": "collapsible-content",
+  "name": "@bultas/collapsible-content",
   "version": "1.2.1",
   "description": "custom element for collapsible content",
   "main": "collapsible-content.js",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
