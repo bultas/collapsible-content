@@ -11,7 +11,7 @@
 
 ## Demo
 
-- https://collapsible-content.now.sh/
+- https://bultas.github.io/collapsible-content/
 
 ## Attributes
 
